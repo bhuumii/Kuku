@@ -33,6 +33,10 @@ def main():
     print(f"  {len(episodes)} episodes, "
           f"{sum(len(e.scenes) for e in episodes)} scenes, "
           f"{sum(len(s.beats) for e in episodes for s in e.scenes)} beats")
+    from scripts.parser import episodes_to_dict
+    (OUTPUT_DIR / "episodes.json").write_text(
+        json.dumps(episodes_to_dict(episodes), indent=2)
+    )
 
     print("\nScoring candidate windows across all scenes...")
     raw_candidates = score_all_episodes(episodes)

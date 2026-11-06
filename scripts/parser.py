@@ -166,3 +166,52 @@ def parse_all_episodes(folder: Path | str) -> list[Episode]:
     episodes = [parse_episode(f) for f in files]
     episodes.sort(key=lambda e: e.number)
     return episodes
+
+def episodes_to_dict(episodes: list[Episode]) -> list[dict]:
+    return [
+        {
+            "number": e.number,
+            "logline": e.logline,
+            "continuity_notes": e.continuity_notes,
+            "source_path": str(e.source_path),
+            "scenes": [
+                {
+                    "number": s.number,
+                    "heading": s.heading,
+                    "start": s.start,
+                    "end": s.end,
+                    "beats": [
+                        {
+                            "kind": b.kind,
+                            "speaker": b.speaker,
+                            "tone": b.tone,
+                            "content": b.content,
+                            "start": b.start,
+                            "end": b.end,
+                        }
+                        for b in s.beats
+                    ],
+                }
+                for s in e.scenes
+            ],
+        }
+        for e in episodes
+    ]
+
+
+def episodes_from_dict(data: list[dict]) -> list[Episode]:
+    episodes = []
+    for e in data:
+        scenes = []
+        for s in e["scenes"]:
+            beats = [Beat(**b) for b in s["beats"]]
+            scenes.append(Scene(
+                number=s["number"], heading=s["heading"],
+                start=s["start"], end=s["end"], beats=beats,
+            ))
+        episodes.append(Episode(
+            number=e["number"], logline=e["logline"],
+            continuity_notes=e["continuity_notes"],
+            scenes=scenes, source_path=Path(e["source_path"]),
+        ))
+    return episodes

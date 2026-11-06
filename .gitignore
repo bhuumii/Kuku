@@ -1,11 +1,8 @@
 venv/
 __pycache__/
-data/
-outputs/*.json
 *.pyc
 .env
 .DS_Store
 .vscode/
-outputs/*.json
-!outputs/.gitkeep
 .llm_cache/
+data/

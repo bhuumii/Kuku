@@ -194,19 +194,35 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-def discover_show() -> tuple[Path, str]:
-    candidates = [p for p in DATA_ROOT.iterdir() if p.is_dir()]
-    if not candidates:
-        raise FileNotFoundError(f"No show folder found inside {DATA_ROOT}/")
-    folder = sorted(candidates)[0]
-    return folder, folder.name
+def discover_show() -> tuple[Path | None, str]:
+    manifest_path = OUTPUT_DIR / "manifest.json"
+    if manifest_path.exists():
+        manifest = json.loads(manifest_path.read_text())
+        return None, manifest.get("show_name", "Unknown show")
+
+    if DATA_ROOT.exists():
+        candidates = [p for p in DATA_ROOT.iterdir() if p.is_dir()]
+        if candidates:
+            folder = sorted(candidates)[0]
+            return folder, folder.name
+
+    return None, "Unknown show"
 
 
 @st.cache_data
 def load_episodes() -> dict[int, Episode]:
+    episodes_json = OUTPUT_DIR / "episodes.json"
+    if episodes_json.exists():
+        from scripts.parser import episodes_from_dict
+        eps = episodes_from_dict(json.loads(episodes_json.read_text()))
+        return {e.number: e for e in eps}
+
     folder, _ = discover_show()
-    eps = parse_all_episodes(folder)
-    return {e.number: e for e in eps}
+    if folder:
+        eps = parse_all_episodes(folder)
+        return {e.number: e for e in eps}
+
+    return {}
 
 
 @st.cache_data
