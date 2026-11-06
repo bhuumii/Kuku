@@ -472,31 +472,6 @@ def evaluation_tab():
             st.markdown(f"<div style='color: var(--text-dim); font-size:0.88rem;'>{s['judge_reasoning']}</div>", unsafe_allow_html=True)
             st.markdown("")
 
-def methodology_tab():
-    st.markdown("""
-#### Pipeline
-
-1. **Parse** — Scripts become structured scenes and beats with second-level timestamps.
-2. **Chunk** — Each scene is split into candidate windows of 20–60 seconds, anchored on dialogue beats.
-3. **Score** — Each candidate is scored by the LLM on hook, cliffhanger, and standalone clarity, with rationale.
-4. **Filter + dedupe + diversify** — Weak and overlapping candidates are removed; a per-episode cap ensures the shortlist spans the series.
-5. **Rank** — The LLM orders the shortlist as a release schedule, reasoning like a growth marketer.
-6. **Cross-episode montages** — A second LLM pass finds thematic patterns across the shortlist and composes character supercuts.
-
-#### Design decisions
-
-- Candidate windows are pre-computed from the script, not invented by the LLM. This eliminates timestamp hallucination.
-- All LLM outputs are structured JSON validated by Pydantic schemas.
-- LLM responses are cached by content hash, so the pipeline is reproducible at zero API cost after the first run.
-- The model is isolated behind one interface — swapping providers is a 3-line change.
-- Transient 429 and 5xx errors are retried with exponential backoff.
-
-#### Known limitations
-
-- Hook judgment depends on how well a text-only model can imagine visual impact. Strong on dialogue-driven beats, weaker on purely visual ones (silent camera moves, SFX).
-- Montages draw from the top shortlist, so a theme that spans weaker episodes may not surface.
-- Scores are comparable within a run, not across model versions.
-""")
 
 
 def main():
@@ -522,14 +497,12 @@ def main():
         "Release schedule",
         "Cross-episode montages",
         "Evaluation",
-        "Methodology",
     ])
 
     with tabs[0]: per_episode_tab(episodes)
     with tabs[1]: ranked_tab(episodes)
     with tabs[2]: montage_tab(episodes)
     with tabs[3]: evaluation_tab()
-    with tabs[4]: methodology_tab()
 
 
 if __name__ == "__main__":
