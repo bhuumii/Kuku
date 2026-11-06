@@ -1,0 +1,99 @@
+{
+  "montages": [
+    {
+      "theme": "Juliana's Cold Defiance",
+      "audience_pitch": "She refuses to break, no matter who tries to crush her.",
+      "segments": [
+        {
+          "episode_number": 1,
+          "scene_number": 1,
+          "start_seconds": 120.0,
+          "end_seconds": 135.0,
+          "what_happens": "Juliana's eyes harden into cold, resolute defiance as the string drone peaks."
+        },
+        {
+          "episode_number": 34,
+          "scene_number": 1,
+          "start_seconds": 155.0,
+          "end_seconds": 168.0,
+          "what_happens": "Lady Juliana looks skyward with firm, resolute eyes and states, 'I have.'"
+        },
+        {
+          "episode_number": 27,
+          "scene_number": 1,
+          "start_seconds": 90.5,
+          "end_seconds": 105.0,
+          "what_happens": "Juliana fiercely defends herself by shouting that the physicians were not saving the Duchess."
+        },
+        {
+          "episode_number": 32,
+          "scene_number": 1,
+          "start_seconds": 140.0,
+          "end_seconds": 154.4,
+          "what_happens": "The glowing hot branding iron is held mere millimeters from Juliana's eye as the screen cuts to black."
+        }
+      ],
+      "cliffhanger_segment_note": "The terrifying close-up of the branding iron inches from her eye creates an unbearable sense of peril.",
+      "editorial_rationale": "This montage showcases the protagonist's emotional arc from desperation to unyielding strength, ending on a high-stakes cliffhanger that forces viewers to search for the full episode."
+    },
+    {
+      "theme": "Villains Getting Exposed",
+      "audience_pitch": "When the duke demands answers, nobody is safe.",
+      "segments": [
+        {
+          "episode_number": 16,
+          "scene_number": 1,
+          "start_seconds": 48.2,
+          "end_seconds": 62.0,
+          "what_happens": "Alexander roars 'Who?!' right before the terrified thug screams out the name of the mastermind."
+        },
+        {
+          "episode_number": 43,
+          "scene_number": 1,
+          "start_seconds": 0.0,
+          "end_seconds": 15.0,
+          "what_happens": "Rupert Ashburn trembles before the altar, shouting 'You're lying!' with desperate panic."
+        },
+        {
+          "episode_number": 43,
+          "scene_number": 1,
+          "start_seconds": 100.0,
+          "end_seconds": 115.0,
+          "what_happens": "Lord Sterling trapped at the exit door with a constable blocking his path, staring in pure terror."
+        }
+      ],
+      "cliffhanger_segment_note": "The absolute terror on Lord Sterling's face as he realizes he is trapped guarantees viewer satisfaction and curiosity.",
+      "editorial_rationale": "Audiences love instant karma and justice; stringing together these interrogation and exposure scenes creates a fast-paced dopamine rush."
+    },
+    {
+      "theme": "Cornered and Trapped",
+      "audience_pitch": "Every time she escapes, they pull her back in.",
+      "segments": [
+        {
+          "episode_number": 28,
+          "scene_number": 1,
+          "start_seconds": 103.5,
+          "end_seconds": 118.0,
+          "what_happens": "Catherine circles Juliana like a predator, mocking her past as the disgraced daughter."
+        },
+        {
+          "episode_number": 11,
+          "scene_number": 1,
+          "start_seconds": 13.5,
+          "end_seconds": 28.0,
+          "what_happens": "Juliana angrily gestures and shouts at Gerald to leave."
+        },
+        {
+          "episode_number": 27,
+          "scene_number": 1,
+          "start_seconds": 130.0,
+          "end_seconds": 150.5,
+          "what_happens": "Juliana's wide, terrified eyes as she is dragged away and the trap closes, cutting abruptly to black."
+        }
+      ],
+      "cliffhanger_segment_note": "The abrupt cut to black while Juliana is dragged away creates an urgent need to see how she survives.",
+      "editorial_rationale": "High-conflict moments focused on entrapment and villainous monologues play exceptionally well on short-form feeds due to their visceral emotional impact."
+    }
+  ],
+  "discovery_notes": "The dataset heavily features high-scoring moments with extreme binary emotional states: either fierce defiance or absolute terror. The best cliffhangers rely on abrupt cuts to black during physical danger or close-ups of characters cornered by authority figures. Combining these across different episodes creates a cohesive narrative of persecution and retaliation that drives high engagement."
+}
