@@ -1,99 +1,113 @@
 {
   "montages": [
     {
-      "theme": "Juliana's Cold Defiance",
-      "audience_pitch": "She refuses to break, no matter who tries to crush her.",
+      "theme": "Juliana's Ultimate Revenge",
+      "audience_pitch": "You do NOT want to mess with Juliana. Watch her take everyone down one by one! #revenge #dramatiktok",
       "segments": [
         {
-          "episode_number": 1,
+          "episode_number": 7,
           "scene_number": 1,
-          "start_seconds": 120.0,
-          "end_seconds": 135.0,
-          "what_happens": "Juliana's eyes harden into cold, resolute defiance as the string drone peaks."
+          "start_seconds": 34.5,
+          "end_seconds": 45.0,
+          "what_happens": "Juliana shows her mud-stained palms while being called a servant."
         },
         {
-          "episode_number": 34,
+          "episode_number": 15,
           "scene_number": 1,
-          "start_seconds": 155.0,
-          "end_seconds": 168.0,
-          "what_happens": "Lady Juliana looks skyward with firm, resolute eyes and states, 'I have.'"
+          "start_seconds": 43.0,
+          "end_seconds": 55.0,
+          "what_happens": "The thug steps into Juliana's personal space and threatens her."
+        },
+        {
+          "episode_number": 47,
+          "scene_number": 4,
+          "start_seconds": 99.0,
+          "end_seconds": 110.0,
+          "what_happens": "Juliana looks coldly at Catherine and commands her to act as a scullery maid."
+        },
+        {
+          "episode_number": 47,
+          "scene_number": 4,
+          "start_seconds": 120.0,
+          "end_seconds": 134.0,
+          "what_happens": "Catherine prostrates herself entirely on the floor before Alexander and Juliana."
+        }
+      ],
+      "cliffhanger_segment_note": "Watching the villain completely bow down to the former servant makes viewers want to see how Juliana won.",
+      "editorial_rationale": "Starts with Juliana being mistreated and builds up to her ultimate power move where the villain begs."
+    },
+    {
+      "theme": "Close Calls with Death",
+      "audience_pitch": "My heart stopped beating during every single one of these. Too intense! #thriller #mustwatch",
+      "segments": [
+        {
+          "episode_number": 13,
+          "scene_number": 2,
+          "start_seconds": 64.1,
+          "end_seconds": 75.0,
+          "what_happens": "A blackthorn needle stabs deep into Juliana's hand."
         },
         {
           "episode_number": 27,
           "scene_number": 1,
-          "start_seconds": 90.5,
-          "end_seconds": 105.0,
-          "what_happens": "Juliana fiercely defends herself by shouting that the physicians were not saving the Duchess."
+          "start_seconds": 115.5,
+          "end_seconds": 125.0,
+          "what_happens": "The blond nobleman whispers the word poison with a dark scowl."
+        },
+        {
+          "episode_number": 32,
+          "scene_number": 1,
+          "start_seconds": 119.4,
+          "end_seconds": 130.0,
+          "what_happens": "Catherine screams silence while raising a branding poker."
         },
         {
           "episode_number": 32,
           "scene_number": 1,
           "start_seconds": 140.0,
           "end_seconds": 154.4,
-          "what_happens": "The glowing hot branding iron is held mere millimeters from Juliana's eye as the screen cuts to black."
+          "what_happens": "The glowing hot iron gets inches from Juliana's eye before the cut."
         }
       ],
-      "cliffhanger_segment_note": "The terrifying close-up of the branding iron inches from her eye creates an unbearable sense of peril.",
-      "editorial_rationale": "This montage showcases the protagonist's emotional arc from desperation to unyielding strength, ending on a high-stakes cliffhanger that forces viewers to search for the full episode."
+      "cliffhanger_segment_note": "The hot branding iron right next to the eye is terrifying and forces people to check if she survives.",
+      "editorial_rationale": "Piling up physical danger scenes hooks viewers through pure adrenaline and fear for the main character."
     },
     {
-      "theme": "Villains Getting Exposed",
-      "audience_pitch": "When the duke demands answers, nobody is safe.",
-      "segments": [
-        {
-          "episode_number": 16,
-          "scene_number": 1,
-          "start_seconds": 48.2,
-          "end_seconds": 62.0,
-          "what_happens": "Alexander roars 'Who?!' right before the terrified thug screams out the name of the mastermind."
-        },
-        {
-          "episode_number": 43,
-          "scene_number": 1,
-          "start_seconds": 0.0,
-          "end_seconds": 15.0,
-          "what_happens": "Rupert Ashburn trembles before the altar, shouting 'You're lying!' with desperate panic."
-        },
-        {
-          "episode_number": 43,
-          "scene_number": 1,
-          "start_seconds": 100.0,
-          "end_seconds": 115.0,
-          "what_happens": "Lord Sterling trapped at the exit door with a constable blocking his path, staring in pure terror."
-        }
-      ],
-      "cliffhanger_segment_note": "The absolute terror on Lord Sterling's face as he realizes he is trapped guarantees viewer satisfaction and curiosity.",
-      "editorial_rationale": "Audiences love instant karma and justice; stringing together these interrogation and exposure scenes creates a fast-paced dopamine rush."
-    },
-    {
-      "theme": "Cornered and Trapped",
-      "audience_pitch": "Every time she escapes, they pull her back in.",
+      "theme": "Catherine Loses Control",
+      "audience_pitch": "When the villain finally snaps, you know chaos is coming. #drama #villain",
       "segments": [
         {
           "episode_number": 28,
           "scene_number": 1,
-          "start_seconds": 103.5,
-          "end_seconds": 118.0,
-          "what_happens": "Catherine circles Juliana like a predator, mocking her past as the disgraced daughter."
+          "start_seconds": 69.2,
+          "end_seconds": 80.0,
+          "what_happens": "Catherine aggressively yanks the silver locket off Juliana's neck."
         },
         {
-          "episode_number": 11,
+          "episode_number": 31,
           "scene_number": 1,
-          "start_seconds": 13.5,
-          "end_seconds": 28.0,
-          "what_happens": "Juliana angrily gestures and shouts at Gerald to leave."
+          "start_seconds": 125.0,
+          "end_seconds": 138.0,
+          "what_happens": "Catherine screams in rage as a hot poker burns a book."
         },
         {
-          "episode_number": 27,
-          "scene_number": 1,
-          "start_seconds": 130.0,
-          "end_seconds": 150.5,
-          "what_happens": "Juliana's wide, terrified eyes as she is dragged away and the trap closes, cutting abruptly to black."
+          "episode_number": 45,
+          "scene_number": 3,
+          "start_seconds": 86.5,
+          "end_seconds": 100.0,
+          "what_happens": "Cathedral doors slam open with armed officers entering."
+        },
+        {
+          "episode_number": 45,
+          "scene_number": 3,
+          "start_seconds": 110.0,
+          "end_seconds": 121.8,
+          "what_happens": "Catherine's face turns from despair to a cold, triumphant smile."
         }
       ],
-      "cliffhanger_segment_note": "The abrupt cut to black while Juliana is dragged away creates an urgent need to see how she survives.",
-      "editorial_rationale": "High-conflict moments focused on entrapment and villainous monologues play exceptionally well on short-form feeds due to their visceral emotional impact."
+      "cliffhanger_segment_note": "The sudden switch in Catherine's facial expression makes viewers desperate to know what secret plan she just pulled off.",
+      "editorial_rationale": "Focuses entirely on the antagonist's mood swings and evil plots to give viewers someone to hate-watch."
     }
   ],
-  "discovery_notes": "The dataset heavily features high-scoring moments with extreme binary emotional states: either fierce defiance or absolute terror. The best cliffhangers rely on abrupt cuts to black during physical danger or close-ups of characters cornered by authority figures. Combining these across different episodes creates a cohesive narrative of persecution and retaliation that drives high engagement."
+  "discovery_notes": "The best moments naturally group around extreme physical danger, characters snapping in rage, and ultimate power reversals. Viewers love seeing the underdog take control after taking abuse from villains."
 }

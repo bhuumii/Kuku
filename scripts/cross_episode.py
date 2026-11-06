@@ -26,22 +26,27 @@ class MontageSet(BaseModel):
 
 _MONTAGE_PROMPT = """You are a social media strategist for a short-form drama platform. You've been given a pool of {n} high-scoring moments from the first {episode_count} episodes of "{show_name}".
 
-Your job: find 3-5 THEMATIC MONTAGES that could be stitched together as cross-episode promo clips. These are the "character supercut" or "every time X happens" videos that drive binge-watching on TikTok and Instagram Reels.
+Find 3-5 thematic montages that could be stitched together as cross-episode promo clips. These are the "character supercut" or "every time X happens" videos that drive binge-watching on TikTok and Instagram Reels.
 
 A good montage:
-- has a clear theme a viewer can name in 4 words (e.g. "character's cold defiance", "villains who get what they deserve", "every time X loses it")
-- draws 3-6 moments from DIFFERENT episodes
+- has a clear theme a viewer can name in 4 words
+- draws 3-6 moments from different episodes
 - builds in emotional intensity across the segments
 - ends on the most jaw-dropping moment so viewers want to watch the full show
 
-Each segment should be a ~8-15 second slice of an existing moment (not the whole clip). Pick the segment timestamps precisely — the start should be the beat that captures the theme, the end should cut off cleanly.
+Each segment should be a roughly 8-15 second slice of an existing moment, not the whole clip.
 
 Here is the pool of high-scoring moments:
 
 {moments}
 
-Return 3-5 montages. For each, pick 3-6 segments from the pool above (referencing them by episode/scene/time), explain the theme, write a punchy audience pitch, and explain why this montage works editorially. End with discovery_notes describing what patterns you noticed in the data."""
+Return 3-5 montages. For each, pick 3-6 segments from the pool above, name the theme, write a punchy audience pitch, and explain why this montage works. End with discovery_notes describing what patterns you noticed.
 
+IMPORTANT writing rules:
+- Write like you are explaining to a colleague, not writing an essay.
+- Use everyday words. No "binary emotional states", "institutional conspiracies", "cohesive narrative of persecution", "cold-audience conversion".
+- Short, direct sentences. A smart 15-year-old should be able to read it.
+- Audience pitches should sound like actual TikTok captions, not corporate copy."""
 
 def _format_moment(c: PromoCandidate) -> str:
     return (
