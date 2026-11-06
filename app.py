@@ -518,15 +518,15 @@ def main():
     )
 
     tabs = st.tabs([
-        "Release schedule",
         "Per-episode picks",
+        "Release schedule",
         "Cross-episode montages",
         "Evaluation",
         "Methodology",
     ])
 
-    with tabs[0]: ranked_tab(episodes)
-    with tabs[1]: per_episode_tab(episodes)
+    with tabs[0]: per_episode_tab(episodes)
+    with tabs[1]: ranked_tab(episodes)
     with tabs[2]: montage_tab(episodes)
     with tabs[3]: evaluation_tab()
     with tabs[4]: methodology_tab()
